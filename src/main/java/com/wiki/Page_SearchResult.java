@@ -14,7 +14,6 @@ import java.util.concurrent.TimeUnit;
 public class Page_SearchResult {
 
     WebDriver driver;
-    ExtentTest test;
 
     public Page_SearchResult(WebDriver driver) {
         this.driver = driver;
@@ -22,16 +21,12 @@ public class Page_SearchResult {
         driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
     }
 
-
     @FindBy(id="firstHeading")
     public WebElement result_Search;
 
     public String getSearchResult()  {
-        
         WebDriverWait wait = new WebDriverWait(driver, 5);
-
         wait.until(ExpectedConditions.visibilityOf(result_Search));
-
         return result_Search.getText();
 
     }

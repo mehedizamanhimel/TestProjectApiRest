@@ -39,7 +39,7 @@ public class BaseTestClass {
         The browser that is gonna be used will be uncommented.
          */
 
-            String browser = testData.properties.getProperty("browser");
+            String browser = null;
 
             switch (browser) {
                 case "chrome":

@@ -34,27 +34,16 @@ public class Page_Wiki {
 
 
     public void SelectLanguage(String langauge) throws InterruptedException {
-        select_Language.click();
-        Thread.sleep(2000);
         Select select = new Select(select_Language);
-        select.selectByValue("langauge");
+        select.selectByValue(langauge);
     }
 
 
     public void SearchWithKeyword(String Keyword){
-        WebDriverWait wait = new WebDriverWait(driver, 5);
-
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         textField_Search.sendKeys(Keyword);
-        if(resultList_Search.getText().contentEquals(Keyword)){
-            button_Search.click();
-        }
-        else {
-            System.out.println("Result not found");
-        }
-        //button_Search.click();
+        button_Search.click();
+
     }
-
-
-
 
 }
