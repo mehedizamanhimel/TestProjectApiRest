@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="SmokeTestSuite" >
-    <!--<parameter name="browser" value="safari"/> -->
+
     <test thread-count="1" name="LanguageTest" >
         <classes>
             <!-- Adding the test class here. we can create different test file, also multiple test suit here. -->
@@ -10,7 +10,5 @@
 
         </classes>
     </test>
-
-
 
 </suite>

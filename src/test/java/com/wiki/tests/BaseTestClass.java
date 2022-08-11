@@ -1,6 +1,8 @@
 package com.wiki.tests;
 
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
@@ -13,9 +15,12 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import utils.TestData;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -23,15 +28,31 @@ public class BaseTestClass {
 
     WebDriver driver;
     static TestData testData;
+    ExtentReports extent;
+    ExtentTest logger;
 
     /*
     Setting up before method.
     It's a library from TestNG that is being before the test case execution.
      */
 
+    @BeforeTest
+    public void beforeTest(){
+        extent = new ExtentReports(System.getProperty("user.dir") +"/test-output/testReport.html", true);
+        extent.loadConfig(new File(System.getProperty("user.dir")+"/extent-config.xml"));
+
+        extent
+                .addSystemInfo("Host Name", "Wiki Search Test")
+                .addSystemInfo("Environment", "Extent Report FreeNow Web")
+                .addSystemInfo("User Name", "Mehedi Zaman Himel");
+
+    }
+
     @BeforeMethod
     public void beforeMethod() throws IOException {
         testData = new TestData();
+
+
 
         /*
         Here we used WebDriverManager to avoid downloading and storing the browser drivers.
@@ -39,7 +60,7 @@ public class BaseTestClass {
         The browser that is gonna be used will be uncommented.
          */
 
-            String browser = null;
+        String browser = testData.properties.getProperty("browser");
 
             switch (browser) {
                 case "chrome":
@@ -96,8 +117,14 @@ public class BaseTestClass {
 
         @AfterMethod
         public void afterMethod () {
-
             driver.quit();
+
+        }
+
+        @AfterTest
+        public void afterTest(){
+            extent.endTest(logger);
+            extent.flush();
         }
     }
 
