@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-12T05:58:33Z" name="SmokeTestSuite" finished-at="2022-08-12T05:59:03Z" duration-ms="29912">
+    <groups>
+    </groups>
+    <test started-at="2022-08-12T05:58:33Z" name="LanguageTest" finished-at="2022-08-12T05:59:03Z" duration-ms="29912">
+      <class name="com.wiki.tests.SearchTest_Wiki">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.wiki.tests.SearchTest_Wiki@7e5afaa6]" started-at="2022-08-12T05:58:33Z" name="beforeTest" finished-at="2022-08-12T05:58:33Z" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.wiki.tests.SearchTest_Wiki@7e5afaa6]" started-at="2022-08-12T05:58:33Z" name="beforeMethod" finished-at="2022-08-12T05:58:37Z" duration-ms="3552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="Verify_Search_Working_ValidData_English()[pri:0, instance:com.wiki.tests.SearchTest_Wiki@7e5afaa6]" started-at="2022-08-12T05:58:37Z" name="Verify_Search_Working_ValidData_English" description="Verify that search is working properly" finished-at="2022-08-12T05:58:48Z" duration-ms="11501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Search_Working_ValidData_English -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.wiki.tests.SearchTest_Wiki@7e5afaa6]" started-at="2022-08-12T05:58:48Z" name="afterMethod" finished-at="2022-08-12T05:58:48Z" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.wiki.tests.SearchTest_Wiki@7e5afaa6]" started-at="2022-08-12T05:58:48Z" name="beforeMethod" finished-at="2022-08-12T05:58:49Z" duration-ms="821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="Verify_Search_Working_ValidData_Bangla()[pri:1, instance:com.wiki.tests.SearchTest_Wiki@7e5afaa6]" started-at="2022-08-12T05:58:49Z" name="Verify_Search_Working_ValidData_Bangla" description="Verify that search is working properly" finished-at="2022-08-12T05:58:55Z" duration-ms="6323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Search_Working_ValidData_Bangla -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.wiki.tests.SearchTest_Wiki@7e5afaa6]" started-at="2022-08-12T05:58:55Z" name="afterMethod" finished-at="2022-08-12T05:58:56Z" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.wiki.tests.SearchTest_Wiki@7e5afaa6]" started-at="2022-08-12T05:58:56Z" name="beforeMethod" finished-at="2022-08-12T05:58:56Z" duration-ms="772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="Verify_Search_Working_ValidData_EnglishToBangla_NegativeTesting()[pri:2, instance:com.wiki.tests.SearchTest_Wiki@7e5afaa6]" started-at="2022-08-12T05:58:56Z" name="Verify_Search_Working_ValidData_EnglishToBangla_NegativeTesting" description="Verify that search is working properly" finished-at="2022-08-12T05:59:03Z" duration-ms="6390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Search_Working_ValidData_EnglishToBangla_NegativeTesting -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.wiki.tests.SearchTest_Wiki@7e5afaa6]" started-at="2022-08-12T05:59:03Z" name="afterMethod" finished-at="2022-08-12T05:59:03Z" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.wiki.tests.SearchTest_Wiki@7e5afaa6]" started-at="2022-08-12T05:59:03Z" name="afterTest" finished-at="2022-08-12T05:59:03Z" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.wiki.tests.SearchTest_Wiki -->
+    </test> <!-- LanguageTest -->
+  </suite> <!-- SmokeTestSuite -->
+</testng-results>
