@@ -1,4 +1,4 @@
-# TestWebAutomationFreeNow
+# TestProjectWebTest
 
 
 To run the project in your command line in local pc via command line: 
