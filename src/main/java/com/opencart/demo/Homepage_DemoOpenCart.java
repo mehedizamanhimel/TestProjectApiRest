@@ -5,22 +5,26 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class homepage {
+public class Homepage_DemoOpenCart {
 
     WebDriver driver;
-    public homepage(WebDriver driver){
-        driver=this.driver;
+    public Homepage_DemoOpenCart(WebDriver driver){
+        this.driver=driver;
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//*[@id=\"narbar-menu\"]/ul/li[4]/a")
     public WebElement button_Menu;
 
-    @FindBy(xpath = "")
+    @FindBy(name = "search")
     public WebElement textField_menuButton;
 
-    public void ClickMenu(){
-        button_Menu.click();
+    @FindBy(xpath= "//*[@id=\"search\"]/button")
+    public WebElement button_search;
+
+    public void ClickElement(WebElement element){
+        element.isDisplayed();
+        element.click();
     }
 
     public void write_Data(String data){

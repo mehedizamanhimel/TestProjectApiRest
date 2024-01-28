@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseTestClass {
 
-    WebDriver driver;
+    public WebDriver driver;
     static TestData testData;
     ExtentReports extent;
     ExtentTest logger;

@@ -7,9 +7,8 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import utils.TestData;
+
 
 
 public class SearchTest_Wiki extends BaseTestClass {
